@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARETO</title>
+    <link rel="icon" type="image/x-icon" href="Images/Ángela.ico">
+    <link rel="stylesheet" href="CSS/pareto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('Images/pareto2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+        <a href="Autor.html"> <img src="Images/Ángela.png" alt="Logo" class="logo">
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button"><a href="index.html">Inicio</a></button>
+        </div>
+    </div> 
+    <div class="images">
+        <h3>PARETO</h3>
+    </div>
+    <div class="input-container">
+        <label for="input">Agregar Categoría:</label>
+        <input type="text" id="input" placeholder="Agregar categoría">
+        <label for="value-input">Valor:</label>
+        <input type="number" id="value-input" placeholder="Valor">
+        <button onclick="addCategory()">Agregar</button>
+
+    </div>
+    <div class="pareto-container">
+        <canvas id="pareto-chart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="JS/pareto.js"></script>
+</body>
+</html>

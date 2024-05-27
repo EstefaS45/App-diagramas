@@ -1,0 +1,79 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+.logo {
+    width: 170px;
+    height: 170px;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .nav-button {
+    padding: 10px 20px;
+    background-color: #9980FA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .images{
+    background-color: #9980FA;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    border: #9980FA solid 1px;
+  }
+  .image-container1 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image-container1 img {
+    margin: 0 10px;
+    height: 250px;
+    width: 250px;
+    border: 2px solid transparent;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container1 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.image-container2 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image-container2 img {
+    margin: 0 10px;
+    height: 250px;
+    width: 250px;
+    border: 2px solid transparent;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container2 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

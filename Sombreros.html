@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMBREROS</title>
+    <link rel="icon" type="image/x-icon" href="Images/Ángela.ico">
+    <link rel="stylesheet" href="CSS/sombreros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('Images/sombre2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+        <a href="Autor.html"> <img src="Images/Ángela.png" alt="Logo" class="logo">
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button"><a href="index.html">Inicio</a></button>
+        </div>
+    </div> 
+    <div class="images">
+        <h3>SOMBREROS</h3>
+    </div>
+    <div class="input-container">
+        <label for="input">Agregar a la Categoría:</label>
+        <select id="category-select">
+            <option value="blanco">Blanco</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="negro">Negro</option>
+            <option value="azul">Azul</option>
+        </select>
+        <input type="text" id="input" placeholder="Agregar elemento">
+        <button onclick="addElement()">Agregar</button>
+        <button onclick="resetDiagram()">Reiniciar</button>
+    </div>
+    <div id="image-container" class="image-container">
+        <div class="category blanco">
+            <img src="Images/blanco.jpg" alt="Imagen 1">
+            <p>Sombrero Blanco</p>
+            <ul id="blanco-list"></ul>
+        </div>
+        <div class="category rojo">
+            <img src="Images/rojo.jpg" alt="Imagen 2">
+            <p>Sombrero Rojo</p>
+            <ul id="rojo-list"></ul>
+        </div>
+        <div class="category verde">
+            <img src="Images/verde.jpg" alt="Imagen 3">
+            <p>Sombrero Verde</p>
+            <ul id="verde-list"></ul>
+        </div>
+        <div class="category amarillo">
+            <img src = "Images/amarillo.jpg" alt="Imagen 4">
+            <p>Sombrero Amarillo</p>
+            <ul id="amarillo-list"></ul>
+        </div>
+        <div class="category negro">
+            <img src="Images/negro.jpg" alt="Imagen 5">
+            <p>Sombrero Negro</p>
+            <ul id="negro-list"></ul>
+        </div>
+        <div class="category azul">
+            <img src="Images/azul.jpg" alt="Imagen 6">
+            <p>Sombrero Azul</p>
+            <ul id="azul-list"></ul>
+        </div>
+    </div>
+    <script src="JS/sombreros.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FODA</title>
+    <link rel="icon" type="image/x-icon" href="Images/Ángela.ico">
+    <link rel="stylesheet" href="CSS/foda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('Images/fod2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+        <a href="Autor.html"> <img src="Images/Ángela.png" alt="Logo" class="logo">
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button"><a href="index.html">Inicio</a></button>
+        </div>
+    </div> 
+    <div class="images">
+        <h3>FODA</h3>
+    </div>
+    <div class="input-container">
+        <label for="input">Agregar a la Categoría:</label>
+        <select id="category-select">
+            <option value="strengths">Fortalezas</option>
+            <option value="opportunities">Oportunidades</option>
+            <option value="weaknesses">Debilidades</option>
+            <option value="threats">Amenazas</option>
+        </select>
+        <input type="text" id="input" placeholder="Agregar elemento">
+        <button onclick="addElement()">Agregar</button>
+        <button onclick="resetDiagram()">Reiniciar</button>
+    </div>
+    <div id="fod-container" class="fod-container">
+        <div class="category strengths">
+            <img src="Images/F.png" alt="Imagen 1">
+            <h2>Fortalezas</h2>
+            <ul id="strengths-list"></ul>
+        </div>
+        <div class="category opportunities">
+            <img src="Images/O.png" alt="Imagen 1">
+            <h2>Oportunidades</h2>
+            <ul id="opportunities-list"></ul>
+        </div>
+        <div class="category weaknesses">
+            <img src="Images/D.png" alt="Imagen 1">
+            <h2>Debilidades</h2>
+            <ul id="weaknesses-list"></ul>
+        </div>
+        <div class="category threats">
+            <img src="Images/A3.png" alt="Imagen 1">
+            <h2>Amenazas</h2>
+            <ul id="threats-list"></ul>
+        </div>
+    </div>
+    <script src="JS/foda.js"></script>
+</body>
+</html>

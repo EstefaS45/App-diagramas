@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISHIKAWA</title>
+    <link rel="icon" type="image/x-icon" href="Images/Ángela.ico">
+    <link rel="stylesheet" href="CSS/ishi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.3.0/joint.min.js"></script>
+    <style>
+        body{
+            background-image: url('Images/ishi2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="logo">
+        <a href="Autor.html"> <img src="Images/Ángela.png" alt="Logo" class="logo">
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button"><a href="index.html">Inicio</a></button>
+        </div>
+    </div> 
+    <div class="lol">
+        <h3>DIAGRAMA ISHIKAWA</h3>
+    </div>
+    <div class="images">
+        <div class="input-container">
+            <label for="title-input">Título:</label>
+            <input type="text" id="title-input" placeholder="Agregar título">
+            <button onclick="addTitle()">Agregar</button>
+        </div>
+    </div>
+        <div id="content-container"></div>
+        <button id="generate-diagram-button" onclick="generateDiagram()">Generar Diagrama</button>
+        <div id="diagram-container"></div>
+    <script src="JS/Ishi.js"></script>
+</body>
+</html>
